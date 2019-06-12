@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <title>List Records</title>    
+    </head>
+    <body>
+        <ul>
+            {% for record in all_records %}
+            <li><a href="/listrecords/{{ record.id }}/">{{ record.artist }} - {{ record.record_name }}</a></li>
+            {% endfor %}
+            
+        </ul>
+
+    </body>
+</html>
